@@ -113,6 +113,7 @@ _THEME_CSS = """
         font-size: 13px;
         font-weight: 500;
         margin-right: 8px;
+        margin-bottom: 6px;
     }
     .pill.ok { 
         background-color: #f0fdf4;
@@ -203,6 +204,34 @@ _THEME_CSS = """
     .stCodeBlock {
         border: 1px solid var(--border);
         border-radius: 12px;
+    }
+
+    /* MOBILE RESPONSIVENESS */
+    @media (max-width: 640px) {
+        .block-container {
+            padding-top: 1rem;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+        
+        section.main [data-testid="stVerticalBlock"] > [data-testid="stVerticalBlockBorderWrapper"] {
+            padding: 12px;
+            border-radius: 12px;
+        }
+        
+        h1 { font-size: 1.75rem !important; }
+        h2 { font-size: 1.5rem !important; }
+        h3 { font-size: 1.25rem !important; }
+
+        .stTabs [data-baseweb="tab"] {
+            font-size: 14px;
+            padding: 8px 12px;
+        }
+        
+        /* Make buttons take full width on mobile if needed, or just larger touch target */
+        .stButton > button {
+            min-height: 44px;
+        }
     }
 </style>
 """
