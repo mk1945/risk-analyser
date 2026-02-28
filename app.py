@@ -305,7 +305,7 @@ def main() -> None:
                 placeholder="Paste the contract text here...",
             )
 
-        lang_hint = st.selectbox("Language hint", ["Auto", "English", "Hindi"], index=0)
+        lang_hint = st.selectbox("Language hint", ["Auto", "English", "Hindi", "Tamil"], index=0)
 
         st.divider()
         st.header("Privacy")
@@ -315,7 +315,7 @@ def main() -> None:
         st.header("LLM (optional)")
         st.write("Default: OFF (no external calls).")
         llm_enabled = st.checkbox("Enable LLM-enhanced explanations", value=False)
-        llm_provider = st.selectbox("Provider", ["GPT-4", "Claude 3"], index=0)
+        llm_provider = st.selectbox("Provider", ["Gemini (Free)"], index=0)
 
         st.divider()
         run_btn = st.button("Analyze", type="primary", use_container_width=True)

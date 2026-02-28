@@ -18,13 +18,14 @@ _RULES = [
             r"interest at .*%",
             r"(?i)\b(?:damages|penalty)\b",
             r"(?i)दंड|जुर्माना|क्षतिपूर्ति",
+            r"(?i)அபராதம்|தாமதக் கட்டணம்|இழப்பீடு",
         ],
     },
     {
         "id": "indemnity",
         "label": "Broad indemnity",
         "severity": "high",
-        "patterns": [r"indemnif(y|ies)", r"hold harmless", r"(?i)क्षतिपूर्ति|हानिपूर्ति"],
+        "patterns": [r"indemnif(y|ies)", r"hold harmless", r"(?i)क्षतिपूर्ति|हानिपूर्ति", r"(?i)இழப்பீடு ஈடு|பாதுகாப்பளித்தல்"],
     },
     {
         "id": "unilateral_termination",
@@ -35,6 +36,7 @@ _RULES = [
             r"at any time .* terminate",
             r"sole discretion",
             r"(?i)किसी भी समय.*समाप्त",
+            r"(?i)எந்த நேரத்திலும்.*ரத்து",
         ],
     },
     {
@@ -47,6 +49,7 @@ _RULES = [
             r"exclusive jurisdiction",
             r"courts at",
             r"(?i)मध्यस्थता|पंचाट|क्षेत्राधिकार|अधिकार क्षेत्र",
+            r"(?i)நடுவர்|நீதிமன்ற வரம்பு|ஆளுகை எல்லை",
         ],
     },
     {
@@ -59,13 +62,14 @@ _RULES = [
             r"lock[- ]in",
             r"minimum term",
             r"(?i)स्वतः.*नवीनीकरण|लॉक[- ]?इन|न्यूनतम अवधि",
+            r"(?i)தானாகப் புதுப்பித்தல்|குறைந்தபட்ச காலம்",
         ],
     },
     {
         "id": "non_compete",
         "label": "Non-compete / restraint",
         "severity": "high",
-        "patterns": [r"non[- ]compete", r"restraint of trade", r"shall not .* compete", r"(?i)प्रतिस्पर्धा.*नहीं"],
+        "patterns": [r"non[- ]compete", r"restraint of trade", r"shall not .* compete", r"(?i)प्रतिस्पर्धा.*नहीं", r"(?i)போட்டியிடக் கூடாது"],
     },
     {
         "id": "ip_assignment",
@@ -76,13 +80,14 @@ _RULES = [
             r"all ip .* shall vest",
             r"work for hire",
             r"(?i)बौद्धिक संपदा|आईपी.*हस्तांतरण|स्वामित्व.*स्थानांतर",
+            r"(?i)அறிவுசார் சொத்துரிமை|உரிமை மாற்றம்",
         ],
     },
     {
         "id": "confidentiality",
         "label": "Confidentiality / NDA",
         "severity": "low",
-        "patterns": [r"confidential", r"nda", r"non[- ]disclosure", r"(?i)गोपनीय|गैर प्रकटीकरण"],
+        "patterns": [r"confidential", r"nda", r"non[- ]disclosure", r"(?i)गोपनीय|गैर प्रकटीकरण", r"(?i)ரகசியமானது|வெளிப்படுத்தாமை"],
     },
 ]
 

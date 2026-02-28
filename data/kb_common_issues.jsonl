@@ -5,3 +5,10 @@
 {"ts": "2026-02-03T08:43:23.557374Z", "contract_type": "employment", "risk_level": "Medium", "flags": ["penalty", "indemnity", "confidentiality"]}
 {"ts": "2026-02-03T08:46:08.102482Z", "contract_type": "employment", "risk_level": "High", "flags": ["penalty", "indemnity", "unilateral_termination", "arbitration_jurisdiction", "confidentiality"]}
 {"ts": "2026-02-03T09:49:22.281883Z", "contract_type": "employment", "risk_level": "High", "flags": ["penalty", "indemnity", "unilateral_termination", "arbitration_jurisdiction", "confidentiality"]}
+{"ts": "2026-02-28T13:58:14.693678Z", "contract_type": "unknown", "risk_level": "High", "flags": ["penalty", "indemnity", "unilateral_termination", "auto_renew_lockin", "ip_assignment"]}
+{"ts": "2026-02-28T14:04:57.185738Z", "contract_type": "employment", "risk_level": "Medium", "flags": ["penalty", "indemnity", "confidentiality"]}
+{"ts": "2026-02-28T14:09:18.693871Z", "contract_type": "unknown", "risk_level": "High", "flags": ["penalty", "indemnity", "unilateral_termination", "auto_renew_lockin", "non_compete", "ip_assignment", "confidentiality"]}
+{"ts": "2026-02-28T14:12:01.739482Z", "contract_type": "unknown", "risk_level": "Low", "flags": []}
+{"ts": "2026-02-28T14:14:07.224107Z", "contract_type": "employment", "risk_level": "Low", "flags": []}
+{"ts": "2026-02-28T14:15:35.399439Z", "contract_type": "employment", "risk_level": "Medium", "flags": ["penalty", "indemnity", "confidentiality"]}
+{"ts": "2026-02-28T14:37:59.296827Z", "contract_type": "employment", "risk_level": "Medium", "flags": ["penalty", "indemnity", "confidentiality"]}

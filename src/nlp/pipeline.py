@@ -20,11 +20,18 @@ def _detect_language(doc_text: str, lang_hint: str) -> str:
         return "en"
     if lang_hint == "Hindi":
         return "hi"
+    if lang_hint == "Tamil":
+        return "ta"
     try:
         code = detect(doc_text[:2000])
     except Exception:
         code = "en"
-    return "hi" if code.startswith("hi") else "en"
+        
+    if code.startswith("hi"):
+        return "hi"
+    elif code.startswith("ta"):
+        return "ta"
+    return "en"
 
 
 def analyze_contract(
