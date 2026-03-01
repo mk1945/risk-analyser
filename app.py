@@ -286,7 +286,7 @@ def main() -> None:
 
     st.title(APP_NAME)
     st.markdown(
-        "<span class='pill ok'>Local-first</span><span class='pill'>English + Hindi</span><span class='pill'>Audit logs</span>",
+        "<span class='pill ok'>Local-first</span><span class='pill'>English + Hindi+Tamil</span><span class='pill'>Audit logs</span>",
         unsafe_allow_html=True,
     )
     st.caption("Confidential contract analysis for Indian SMEs (no external calls unless you turn on LLM mode).")
